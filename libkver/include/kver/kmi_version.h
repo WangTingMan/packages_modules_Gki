@@ -22,11 +22,13 @@
 #include <string>
 #include <tuple>
 
+#include <kver/LIBKVER_EXPORTS.h>
+
 namespace android::kver {
 
 // KMI version describes the version of the stable kernel module interface.
 // Example: 5.4-android12-0
-class KmiVersion {
+class LIBKVER_API KmiVersion {
  public:
   // Parse a string like "5.4-android12-0" to a KmiVersion object.
   // Return nullopt if any error.

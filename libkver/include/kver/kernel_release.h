@@ -23,11 +23,13 @@
 
 #include <kver/kmi_version.h>
 
+#include <kver/LIBKVER_EXPORTS.h>
+
 namespace android::kver {
 
 // Kernel release is a unique identifier of a GKI binary.
 // Example: 5.4.42-android12-0
-class KernelRelease {
+class LIBKVER_API KernelRelease {
  public:
   // Parse a string like "5.4.42-android12-0" to a KernelRelease object.
   // If allow_suffix is set, allow strings like "5.4.42-android12-0-something".

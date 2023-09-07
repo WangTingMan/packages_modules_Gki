@@ -15,7 +15,9 @@
 //
 
 #include <inttypes.h>
+#ifndef _MSC_VER
 #include <sys/utsname.h>
+#endif
 
 #include <android-base/stringprintf.h>
 #include <android-base/logging.h>
